@@ -8,13 +8,17 @@ funciton onLoad(){
   document.addEventListener("deviceready",onDeviceReady,false);
   
 }
+function test(){
+	alert("worked");
+}
 function onDeviceReady(){
-  alert("Device is ready you may click on hyperlink")
+  alert( "Device is ready you may click on hyperlink" );
 }
 </script>
 
 <body onload="onLoad()">
 	<button type="button" onclick="onDeviceReady()">Ready Device</button>
+	<button type="button" onclick="test()">test</button>
 	<a href="web.njit.edu/~jc443/IT302/html/index.php">Ullman Project</a>
 </body>
 </html>

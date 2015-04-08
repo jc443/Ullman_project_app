@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- config.xml reference:
+     https://build.phonegap.com/docs/config-xml -->
+
+ 
+<widget xmlns 	  = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "edu.njit.joecan.phonegap03"
+        version   = "1.0.0">
+
+    <name>UllmanConnect</name>
+    <!-- Define app icon for each platform.    -->
+    <icon src="icon.png" />
+
+	<preference name="phonegap-version" value="3.6.3" />
+	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" /> 
+	<gap:plugin name="com.badrit.backbutton" />
+	
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    </widget>

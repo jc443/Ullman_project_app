@@ -10,13 +10,20 @@ function test(){
 	alert("worked");
 }
 function onDeviceReady(){
-  alert( "Device is ready you may click on hyperlink" );
+  alert( "Device is ready" );
+  var ref = window.open('web.njit.edu/~jc443/IT302/html/index.php', '_blank', 'location=yes');
+         ref.addEventListener('loadstart', function(event) { alert('start: ' + event.url); });
+         ref.addEventListener('loadstop', function(event) { alert('stop: ' + event.url); });
+         ref.addEventListener('loaderror', function(event) { alert('error: ' + event.message); });
+         ref.addEventListener('exit', function(event) { alert(event.type); });
 }
+
+
 </script>
 
 <body>
 	<button type="button" onclick="onDeviceReady()">Ready Device</button>
 	<button type="button" onclick="test()">test</button>
-	<a href="web.njit.edu/~jc443/IT302/html/index.php">Ullman Project</a>
+	
 </body>
 </html>

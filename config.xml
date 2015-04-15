@@ -16,6 +16,7 @@
 	<preference name="phonegap-version" value="3.6.3" />
 	<gap:plugin name="org.apache.cordova.geolocation" version="0.3.10" /> 
 	<gap:plugin name="com.badrit.backbutton" />
+	<gap:plugin name="org.li8.inappbrowser" version="0.1" />
 	
     <feature name="Device">
         <param name="android-package" value="org.apache.cordova.device.Device" />

@@ -11,7 +11,13 @@ function test(){
 }
 function onDeviceReady(){
   alert( "Device is ready" );
- window.location.assign("http://www.w3schools.com")
+  
+    var r = confirm("Press a button!");
+    if (r == true) {
+         window.location.assign("http://www.w3schools.com");
+    } else {
+    }
+
 }
 
 
